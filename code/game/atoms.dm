@@ -1220,11 +1220,11 @@
 
 ///Crowbar act
 /atom/proc/crowbar_act(mob/living/user, obj/item/I)
-	return SEND_SIGNAL(src, COMSIG_ATOM_CROWBAR_ACT, user, I)
+	return SEND_SIGNAL(src, COMSIG_ATOM_TOOL_ACT(TOOL_CROWBAR), user, I)
 
 ///Multitool act
 /atom/proc/multitool_act(mob/living/user, obj/item/I)
-	return SEND_SIGNAL(src, COMSIG_ATOM_MULTITOOL_ACT, user, I)
+	return SEND_SIGNAL(src, COMSIG_ATOM_TOOL_ACT(TOOL_MULTITOOL), user, I)
 
 ///Check if the multitool has an item in it's data buffer
 /atom/proc/multitool_check_buffer(user, obj/item/I, silent = FALSE)
@@ -1236,23 +1236,23 @@
 
 ///Screwdriver act
 /atom/proc/screwdriver_act(mob/living/user, obj/item/I)
-	return SEND_SIGNAL(src, COMSIG_ATOM_SCREWDRIVER_ACT, user, I)
+	return SEND_SIGNAL(src, COMSIG_ATOM_TOOL_ACT(TOOL_SCREWDRIVER), user, I)
 
 ///Wrench act
 /atom/proc/wrench_act(mob/living/user, obj/item/I)
-	return SEND_SIGNAL(src, COMSIG_ATOM_WRENCH_ACT, user, I)
+	return SEND_SIGNAL(src, COMSIG_ATOM_TOOL_ACT(TOOL_WRENCH), user, I)
 
 ///Wirecutter act
 /atom/proc/wirecutter_act(mob/living/user, obj/item/I)
-	return SEND_SIGNAL(src, COMSIG_ATOM_WIRECUTTER_ACT, user, I)
+	return SEND_SIGNAL(src, COMSIG_ATOM_TOOL_ACT(TOOL_WIRECUTTER), user, I)
 
 ///Welder act
 /atom/proc/welder_act(mob/living/user, obj/item/I)
-	return SEND_SIGNAL(src, COMSIG_ATOM_WELDER_ACT, user, I)
+	return SEND_SIGNAL(src, COMSIG_ATOM_TOOL_ACT(TOOL_WELDER), user, I)
 
 ///Analyzer act
 /atom/proc/analyzer_act(mob/living/user, obj/item/I)
-	return SEND_SIGNAL(src, COMSIG_ATOM_ANALYSER_ACT, user, I)
+	return SEND_SIGNAL(src, COMSIG_ATOM_TOOL_ACT(TOOL_ANALYZER), user, I)
 
 ///Generate a tag for this atom
 /atom/proc/GenerateTag()

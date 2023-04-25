@@ -193,7 +193,7 @@
 	return // can't be easily replaced
 
 /turf/open/floor/concrete/crowbar_act(mob/living/user, obj/item/I)
-	return SEND_SIGNAL(src, COMSIG_ATOM_CROWBAR_ACT, user, I) // can't be pried up
+	return SEND_SIGNAL(src, COMSIG_ATOM_TOOL_ACT(TOOL_CROWBAR), user, I) // can't be pried up
 
 
 /turf/open/floor/concrete/slab_1

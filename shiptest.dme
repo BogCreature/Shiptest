@@ -96,6 +96,7 @@
 #include "code\__DEFINES\plumbing.dm"
 #include "code\__DEFINES\power.dm"
 #include "code\__DEFINES\preferences.dm"
+#include "code\__DEFINES\processing.dm"
 #include "code\__DEFINES\procpath.dm"
 #include "code\__DEFINES\profile.dm"
 #include "code\__DEFINES\projectiles.dm"
